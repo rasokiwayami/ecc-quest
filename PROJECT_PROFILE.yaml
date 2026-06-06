@@ -1,0 +1,62 @@
+project:
+  repo: rasokiwayami/ecc-quest
+  type: supporting_tool
+  domain: coding_training
+  orchestrator: project_orchestrator
+  primary_goal: ECC and coding workflow practice through local quests and a Node.js progress CLI
+  default_branch: main
+  visibility: private_or_public_per_current_remote
+
+runtime:
+  local_only: true
+  deployment: none
+  languages:
+    - javascript
+    - markdown
+  package_managers:
+    - none_required
+  operating_environment:
+    - Mac local operation under /Users/sora/dev/ecc-quest
+    - Legacy Windows/WSL usage is supported only through normal Node.js execution
+
+authority:
+  global_default_band: A2
+  canonical_authority_registry: shieikan/jinsei/registries/AUTHORITY_MATRIX.md
+  forbidden:
+    - credential or token exposure
+    - raw local XP/private state in tracked files
+    - generated workspace or log commits
+    - public claims without review
+    - push without required Review Controller approval
+
+global_coding_department:
+  default_route:
+    - Executive Orchestrator
+    - ECC Quest Project Orchestrator
+    - Implementation Planning Worker
+    - Implementation Worker
+    - Implementation Review Controller
+  queue_request_command: cd /Users/sora/dev/jinsei && python3 scripts/dispatch_codex_session.py --queue-request --project "ECC Quest" --repo /Users/sora/dev/ecc-quest
+  run_queue_command: cd /Users/sora/dev/jinsei && python3 scripts/dispatch_codex_session.py --from-queue --limit 3
+  push_review_check_command: cd /Users/sora/dev/jinsei && python3 scripts/dispatch_codex_session.py --check-push-review --project "ECC Quest"
+  required_for:
+    - non_trivial_implementation
+    - multi_file_changes
+    - training_contract_changes
+    - public_or_push_readiness
+
+verification:
+  default:
+    - node --check scripts/check.js
+  formatting:
+    - git diff --check
+
+state:
+  ignored_runtime_dirs:
+    - .pytest_cache/
+    - node_modules/
+  canonical_progress:
+    - AGENTS.md
+    - PROJECT_PROFILE.yaml
+    - quests/
+    - scripts/check.js
