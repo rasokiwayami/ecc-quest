@@ -19,6 +19,17 @@ Use separate Planning Worker, Implementation Worker, and Review Controller
 roles for multi-file changes, workflow changes, public/push readiness, or
 anything that changes the training contract.
 
+## Development Autonomy
+
+Development GitHub operations are L5 under Jinsei's
+`GITHUB_DEVOPS_AUTONOMY_POLICY.md` after this repo's verification and required
+Review Controller gates pass. This includes branch work, local commits, pushes
+to an existing approved remote, PR creation/update, and issue operations.
+
+Public deployment, repository visibility changes, billing or paid services,
+secret mutation, production data mutation, public claims, and publication remain
+gated.
+
 ## Local Rules
 
 - Keep changes small and quest-focused.
