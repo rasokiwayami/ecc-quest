@@ -4,27 +4,23 @@ This repository is a local training tool for ECC / coding workflow practice.
 Use the code, scripts, quests, and project profile as the operating truth; do
 not rely on README prose when it lags implementation.
 
-## Global Routing
+## Development Route
 
-For non-trivial implementation, route through Jinsei / Global Coding Department:
-
-```bash
-cd /Users/sora/dev/jinsei
-python3 scripts/dispatch_codex_session.py --queue-request --project "ECC Quest" --repo /Users/sora/dev/ecc-quest --operation-id <operation_id> --goal "<bounded goal>" --authority-band A2
-python3 scripts/dispatch_codex_session.py --from-queue --limit 3
-python3 scripts/dispatch_codex_session.py --check-push-review --project "ECC Quest" --operation-id <operation_id>
-```
-
-Use separate Planning Worker, Implementation Worker, and Review Controller
-roles for multi-file changes, workflow changes, public/push readiness, or
-anything that changes the training contract.
+For non-trivial implementation, use the parent-owned route:
+Plan -> Work -> independent Sol max Review. The central instructions are
+`/Users/sora/dev/jinsei/CODEX_GLOBAL_AGENTS.md`, and the deterministic task,
+authority, evidence, and Git boundary is `/Users/sora/dev/jinsei/bin/jinsei`.
+The Codex parent owns model launch; the current TaskIntent, exact worktree
+scope, and fresh verification/review evidence must bind to the current HEAD.
+Do not infer launch commands from this repository.
 
 ## Development Autonomy
 
 Development GitHub operations are L5 under Jinsei's
-`GITHUB_DEVOPS_AUTONOMY_POLICY.md` after this repo's verification and required
-Review Controller gates pass. This includes branch work, local commits, pushes
-to an existing approved remote, PR creation/update, and issue operations.
+`GITHUB_DEVOPS_AUTONOMY_POLICY.md` after this repo's verification and fresh
+independent Sol max review evidence bound to the current HEAD pass. This
+includes branch work, local commits, pushes to an existing approved remote, PR
+creation/update, and issue operations.
 
 Public deployment, repository visibility changes, billing or paid services,
 secret mutation, production data mutation, public claims, and publication remain
