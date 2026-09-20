@@ -1,4 +1,4 @@
-# Agent Guidelines
+# ecc-quest/AGENTS.md
 
 This repository is a local training tool for ECC / coding workflow practice.
 Use the code, scripts, quests, and project profile as the operating truth; do
